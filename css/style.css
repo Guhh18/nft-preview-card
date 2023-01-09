@@ -31,7 +31,7 @@ main{
 
 
 
-
+/* IMAGE */
 .image{
     width: 160px;
     height: 160px;
@@ -78,7 +78,7 @@ main{
 
 
 
-
+/* TITLE AND DESCRIPTION */
 .content h1{
     font-size: 12px;
     font-weight: 600;
@@ -97,7 +97,7 @@ main{
 
 
 
-
+/* ETHEREUM AND CLOCK */
 .icons{
     display: flex;
     justify-content: space-between;
@@ -133,6 +133,8 @@ main{
 }
 
 
+
+/* LINE */
 hr{
     width: 100%;
     height: .1px;
@@ -141,6 +143,9 @@ hr{
 }
 
 
+
+
+/* CREATOR */
 .creator{
     display: flex;
     align-items: center;  
@@ -165,7 +170,7 @@ hr{
 
 
 
-
+/* FOOTER */
 .attribution{
     font-size: 11px;
     text-align: center;
@@ -179,7 +184,7 @@ hr{
 
 
 
-
+/* HOVER */
 .content h1:hover{
     color: hsl(178, 100%, 50%);
 }
@@ -188,11 +193,6 @@ hr{
     background-color: rgba(0, 255, 247, 0.5);
     opacity: 1;
 }
-
-.img-eye:hover.img-eye img{
-    opacity: 1;
-}
-
 
 .creator h2 span:hover {
     color: hsl(178, 100%, 50%);
