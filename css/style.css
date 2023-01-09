@@ -24,21 +24,111 @@ main{
     background-color: hsl(216, 50%, 16%);
     padding: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
 
 }
+
+
+
 
 .image{
     width: 160px;
-    height: 160px;    
+    height: 160px;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-.image img{
+.image .img-nft{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+
+.image .img-nft img{
     width: 160px;
     height: auto;
     border-radius: 5px;
 }
 
+.image .img-eye{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    z-index: 10;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.image .img-eye img{
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+
+
+
+.content h1{
+    font-size: 15px;
+    color: #fff;
+}
+
+.content p{
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+
+
+
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.icon img{
+    padding-right: 5px;
+}
+
+.icon-1 img{
+    width: 12px;
+    height: 12px;
+}
+
+.icon-2 img{
+    width: 18px;
+    height: 13px;
+}
+
+.icon h2{
+    font-size: 9px;
+    color: hsl(215, 51%, 70%);
+}
+
+.icon span h2{
+    color: hsl(178, 100%, 50%);
+}
 
 
 
@@ -54,4 +144,20 @@ footer .attribution{
 
 footer .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+
+.content h1:hover{
+    color: hsl(178, 100%, 50%);;
+}
+
+.img-eye:hover{
+    background-color: hsl(178, 100%, 50%)   ;
+    opacity: .5;
+}
+
+.img-eye:hover.img-eye img{
+    opacity: 1;
 }
